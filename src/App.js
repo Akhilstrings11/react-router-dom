@@ -7,6 +7,7 @@ import './Components/Styling.css'
 import NavBar from './Components/NavBar'
 import PageNotFound from './Components/PageNotFound'
 import UsersPage from './Components/UsersPage'
+import SingleUser from './Components/SingleUser'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/contact' element = { <ContactPage />} />
         <Route path='*' element = { <PageNotFound /> } />
         <Route path='/userPage' element = { <UsersPage /> } />
+        <Route path="/user/:id" element = { <SingleUser /> } />
       </Routes>
       </BrowserRouter>
     </div>
